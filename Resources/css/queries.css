@@ -1,0 +1,195 @@
+/* -------BIG TABLETS/SMALL COMPUTERS: 1200px------- */
+@media only screen and (max-width: 1200px) {
+    section {
+        padding: 40px 80px 40px;
+        margin-top: -15vh;
+        padding-top: 12vh;
+        padding-bottom: 12vh;
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    }
+    /* OUR SERVICES */
+    .section-services {
+        background-size: 105%;
+    }
+    /*ABOUT US*/
+    .media-aboutus {
+        flex-wrap: wrap;
+        flex: 2;
+    }
+
+    .section-aboutus .section-comments {
+        flex: 1;
+    }
+    .opening-times {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        flex: 1;
+    }
+    .opening-times ul {
+        text-align: center;
+    }
+    /* Meet the team */
+    .photo-card img {
+        width: 200px;
+    }
+
+    /*FORM*/
+    .section-form {
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+/* -------SMALL/BIG TABLETS: 767 - 1023px------- */
+@media only screen and (max-width: 1023px) {
+    header {
+        height: 70vh;
+    }
+
+    .main-nav li {
+        padding: 10px 10px;
+    }
+
+    section {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .section-services {
+        background-size: 170%;
+    }
+
+    .media-aboutus {
+        flex-direction: column;
+    }
+
+    .media-aboutus > * {
+        flex: 1;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+/* -------SMALL PHONES/TABLETS: 480 - 767PX------- */
+@media only screen and (max-width: 767px) {
+    .main-nav {
+        display: none;
+    }
+
+    nav {
+        background-color: #090707;
+        position: relative;
+        z-index: 9999;
+    }
+
+    .navigation-logo {
+        margin-top: 5px;
+        padding-left: 10px;
+    }
+
+    .main-nav li {
+        display: block;
+    }
+
+    .main-nav > li > a {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
+    section {
+        clip-path: none;
+        margin-top: 0;
+        padding: 10px 25px 10px;
+    }
+
+    section h2:after {
+        margin-top: 20px;
+    }
+
+    .section-services {
+        background-size: 280%;
+    }
+
+    #map {
+        width: 80%;
+        height: auto;
+    }
+
+    .section-form {
+        clip-path: none;
+        height: auto;
+    }
+
+    .section-form h2 {
+        flex: none;
+    }
+}
+
+/* -------SMALL PHONES: 0 - 480PX------- */
+@media only screen and (max-width: 480px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #090707d0;
+        z-index: 9999;
+    }
+
+    .nav-ribbon {
+        width: 100%;
+    }
+
+    nav .main-nav {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    nav .navigation-logo {
+        height: 50px;
+        margin-top: 5px;
+    }
+
+    .hero-text-box {
+        transform: translate(-50%, -45%);
+    }
+
+    section {
+        padding: 10px 20px 10px;
+    }
+
+    .section-services {
+        background-image: none;
+    }
+
+    .section-meettheteam .section-comments {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .social-links {
+        float: none;
+        text-align: center;
+    }
+
+    .social-links li {
+        margin: 5px 5px 5px 5px;
+    }
+
+    .footer-nav li {
+        float: none;
+        margin: 5px 5px 5px 5px;
+    }
+}
