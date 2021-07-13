@@ -1,0 +1,11 @@
+:root {
+  --color-black: #090707;
+  --color-blue: #30A9DE;
+  --color-yellow: #EFDC05;
+  --color-red: #E53A40;
+
+  --text-lg: 1.125rem;
+  --text-xl: 2.25rem;
+
+  --semi-bold: 600;
+}

@@ -1,0 +1,120 @@
+@import '../../UI/theme.css';
+
+nav {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  background-color: var(--color-black);
+}
+
+.mainNav {
+  list-style: none;
+  text-transform: capitalize;
+  margin-top: 20px;
+  font-weight: var(--semi-bold);
+  font-size: var(--text-lg);
+}
+
+.mainNav li {
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+.mainNav li a:link,
+.mainNav li a:visited {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.5rem;
+  transition: border-bottom 0.2s;
+  text-decoration: none;
+  color: #fff;
+}
+
+.mainNav li a:hover,
+.mainNav li a:active {
+  border-bottom: 2px solid var(--color-red);
+}
+
+.navigationLogo {
+  height: 80px;
+  width: auto;
+  float: left;
+  padding-left: 50px;
+}
+
+/* ------------------------------------------ */
+/* MOBILE NAVIGATION */
+/* ------------------------------------------ */
+
+.mobileNavIcon {
+  float: right;
+  margin-top: 20px;
+  cursor: pointer;
+  display: none;
+  font-size: 200%;
+  color: #fff;
+}
+
+/* -------BIG TABLETS/SMALL COMPUTERS: 1200px------- */
+@media only screen and (max-width: 1200px) {}
+/* -------SMALL/BIG TABLETS: 767 - 1023px------- */
+@media only screen and (max-width: 1023px) {
+  .mainNav li {
+    padding: 10px 10px;
+  }
+}
+/* -------SMALL PHONES/TABLETS: 480 - 767PX------- */
+@media only screen and (max-width: 767px) {
+  .mainNav {
+    display: none;
+  }
+
+  nav {
+    background-color: var(--color-black);
+    position: relative;
+    z-index: 9999;
+  }
+
+  .navigationLogo {
+    margin-top: 5px;
+    padding-left: 10px;
+  }
+
+  .mainNav li {
+    display: block;
+  }
+
+  .mainNav > li > a {
+      display: block;
+      width: 100%;
+  }
+
+  .mobileNavIcon {
+      display: inline-block;
+  }
+}
+/* -------SMALL PHONES: 0 - 480PX------- */
+@media only screen and (max-width: 480px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-black);
+    z-index: 9999;
+  }
+
+  .mainNav {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .navRibbon {
+    width: 100%;
+  }
+
+  .navigationLogo {
+    height: 50px;
+    margin-top: 5px;
+  }
+}

@@ -1,16 +1,19 @@
+import classes from './NavBar.module.css';
+import pawWhite from '../../../assets/images/vendor/Dog-Paw-Print-white.png';
+
 const NavBar = () => {
   return (
     <header>
       <nav>
-        <div class="navigation-logo-box">
+        <div>
           <img
-            src="vendors/img/Dog-Paw-Print-white.png"
+            src={pawWhite}
             alt="pawprint"
-            class="navigation-logo"
+            className={classes.navigationLogo}
           />
         </div>
-        <div class="nav-ribbon">
-          <ul class="main-nav">
+        <div className={classes.navRibbon}>
+          <ul className={classes.mainNav}>
             <li>
               <a href="#home">Home</a>
             </li>
@@ -27,8 +30,9 @@ const NavBar = () => {
               <a href="#contact">Contact us</a>
             </li>
           </ul>
-          <a class="mobile-nav-icon">
-            <ion-icon name="grid-outline"></ion-icon>
+          <a class={classes.mobileNavIcon}>
+            <p>icon</p>
+            {/* <ion-icon name="grid-outline"></ion-icon> */}
           </a>
         </div>
       </nav>
