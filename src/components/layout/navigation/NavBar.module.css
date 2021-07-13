@@ -1,9 +1,8 @@
 @import '../../UI/theme.css';
 
 nav {
-  padding: 0 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 100%;
   background-color: var(--color-black);
 }
@@ -11,14 +10,14 @@ nav {
 .mainNav {
   list-style: none;
   text-transform: capitalize;
-  margin-top: 20px;
+  align-items: center;
   font-weight: var(--semi-bold);
   font-size: var(--text-lg);
 }
 
 .mainNav li {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 0.25rem 1rem;
 }
 
 .mainNav li a:link,
@@ -39,7 +38,6 @@ nav {
   height: 80px;
   width: auto;
   float: left;
-  padding-left: 50px;
 }
 
 /* ------------------------------------------ */
@@ -85,12 +83,12 @@ nav {
   }
 
   .mainNav > li > a {
-      display: block;
-      width: 100%;
+    display: block;
+    width: 100%;
   }
 
   .mobileNavIcon {
-      display: inline-block;
+    display: inline-block;
   }
 }
 /* -------SMALL PHONES: 0 - 480PX------- */
