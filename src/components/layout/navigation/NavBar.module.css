@@ -1,14 +1,67 @@
 @import '../../UI/theme.css';
 
 nav {
-  display: flex;
-  justify-content: space-around;
   max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: var(--color-black);
+  z-index: 9999;
+  font-size: large;
+}
+
+/* ------------------------------------------ */
+/* MOBILE NAVIGATION */
+/* ------------------------------------------ */
+
+.mobileNavIcon {
+  float: right;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 200%;
+  color: #fff;
+}
+
+.navRibbon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+}
+
+.navItems {
+  height: 100vh;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.navItems a {
+  text-decoration: none;
+  cursor: pointer;
+  margin: 2rem 2rem;
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  border-bottom: 2px;
+  border-color: transparent;
+}
+
+.navItems a:hover,
+.navItems a:active {
+  border-bottom: 2px solid var(--color-red);
+}
+
+/* .navRibbon {
+  width: 100%;
+  justify-content: space-between;
 }
 
 .mainNav {
   list-style: none;
+  margin: 0;
   text-transform: capitalize;
   align-items: center;
   font-weight: var(--semi-bold);
@@ -16,6 +69,7 @@ nav {
 }
 
 .mainNav li {
+  width: 100%;
   display: inline-block;
   padding: 0.25rem 1rem;
 }
@@ -33,86 +87,29 @@ nav {
 .mainNav li a:active {
   border-bottom: 2px solid var(--color-red);
 }
-
+*/
 .navigationLogo {
-  height: 80px;
+  height: 4rem;
   width: auto;
   float: left;
+}  
+
+button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
-/* ------------------------------------------ */
-/* MOBILE NAVIGATION */
-/* ------------------------------------------ */
 
-.mobileNavIcon {
-  float: right;
-  margin-top: 20px;
-  cursor: pointer;
-  display: none;
-  font-size: 200%;
-  color: #fff;
-}
 
-/* -------BIG TABLETS/SMALL COMPUTERS: 1200px------- */
-@media only screen and (max-width: 1200px) {}
-/* -------SMALL/BIG TABLETS: 767 - 1023px------- */
-@media only screen and (max-width: 1023px) {
-  .mainNav li {
-    padding: 10px 10px;
-  }
-}
-/* -------SMALL PHONES/TABLETS: 480 - 767PX------- */
-@media only screen and (max-width: 767px) {
-  .mainNav {
-    display: none;
-  }
+@media only screen and (min-width: 640px) {}
 
-  nav {
-    background-color: var(--color-black);
-    position: relative;
-    z-index: 9999;
-  }
+@media only screen and (min-width: 768px) {}
 
-  .navigationLogo {
-    margin-top: 5px;
-    padding-left: 10px;
-  }
+@media only screen and (min-width: 1024px) {}
 
-  .mainNav li {
-    display: block;
-  }
-
-  .mainNav > li > a {
-    display: block;
-    width: 100%;
-  }
-
-  .mobileNavIcon {
-    display: inline-block;
-  }
-}
-/* -------SMALL PHONES: 0 - 480PX------- */
-@media only screen and (max-width: 480px) {
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--color-black);
-    z-index: 9999;
-  }
-
-  .mainNav {
-    margin-top: 0;
-    text-align: center;
-  }
-
-  .navRibbon {
-    width: 100%;
-  }
-
-  .navigationLogo {
-    height: 50px;
-    margin-top: 5px;
-  }
-}
+@media only screen and (min-width: 1536px) {}

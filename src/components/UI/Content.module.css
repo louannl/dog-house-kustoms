@@ -1,0 +1,23 @@
+.content {
+  margin: 0 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  max-width: 1280px;
+}
+
+/* TODO: media queries */
+
+
+/* -------BIG TABLETS/SMALL COMPUTERS: 1200px------- */
+@media only screen and (min-width: 1200px) {
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* -------SMALL/BIG TABLETS: 767 - 1023px------- */
+@media only screen and (min-width: 1023px) {}
+/* -------SMALL PHONES/TABLETS: 480 - 767PX------- */
+@media only screen and (min-width: 767px) {}
+/* -------SMALL PHONES: 0 - 480PX------- */
+@media only screen and (min-width: 480px) {}

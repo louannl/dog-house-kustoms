@@ -1,0 +1,17 @@
+.enter{
+  height: 0px;
+  transform: scale(0.9);
+}
+.enterActive {
+  height: 100vh;
+  transform: translateX(0);
+  transition: height 300ms ease;
+}
+.exit {
+  opacity: 1;
+}
+.exitActive {
+  height: 0px;
+  transition: height 300ms ease;
+  transform: scale(0.9); 
+}

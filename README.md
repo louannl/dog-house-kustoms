@@ -1,12 +1,25 @@
-# JobProjects
+# Dog House Kustoms Redesign
+Original project: 
+- JS & Jquery for navigation scroll
+- HTML & CSS
 
-To help my productivity during lockdown on coding, I first decided to use
-my current knowledge of vanilla css to implement a website from scratch, I
-found a lot of faults in my code originally and better understood from this
-how I should implement my code in future. Instead of carrying on with improving the
-vanilla css code, I decided it was best to move on, I have many comments on
-what went well and wrong originally in the code, please refer to the readme
-for my learning from this.
+Current Version:
+- React
+- CSS
+
+Comments: 
+Tailwind made it a lot easier to quickly style elements in my other projects.
+
+
+## Media queries blank copy (Switched to mobile first)
+@media only screen and (min-width: 640px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1536px) {}
+
 
 ## Images used
 
@@ -31,7 +44,7 @@ http://sugarfirepie.com/
 
 ## Feedback on coding
 
-## What didn't go well
+## What didn't go well (old)
 
 Clippath proves to be very painful when maintaining a layout with responsiveness. In future I
 don't believe I will use this, as it has a significant time cost to it.
@@ -49,7 +62,7 @@ when clicked, however I wasn't sure how to implement this cleanly with the code 
 To spend less time on vanilla css, I decided it would be more fruitful to move on to learning
 a framework and implementing what I've learnt from vanilla css.
 
-## What went well
+## What went well (old)
 
 Although this is only the second time I've implemented a sticky nav, this was very easy for me to add in again.
 
