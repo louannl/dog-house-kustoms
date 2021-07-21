@@ -9,6 +9,7 @@ nav {
   background-color: var(--color-black);
   z-index: 9999;
   font-size: large;
+  align-items: center;
 }
 
 /* ------------------------------------------ */
@@ -25,7 +26,7 @@ nav {
 
 .navRibbon {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0.75rem 1rem;
 }
@@ -104,11 +105,33 @@ button {
 	outline: inherit;
 }
 
-
-
 @media only screen and (min-width: 640px) {}
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .mobileNavIcon {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+  justify-content: space-around;
+  }
+
+  .navItems {
+    height: auto;
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    flex-direction: row;
+  }
+  
+  .navItems a {
+    margin: 0.25rem 0.25rem;
+  }
+}
 
 @media only screen and (min-width: 1024px) {}
 

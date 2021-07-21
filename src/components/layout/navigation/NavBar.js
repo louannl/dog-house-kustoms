@@ -12,6 +12,18 @@ const NavBar = () => {
     setIsOpen((prevState) => !prevState);
   };
 
+  let width = window.innerWidth;
+
+  let navBar = (
+    <div className={classes.navItems}>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About us</a>
+      <a href="#team">Meet the team</a>
+      <a href="#contact">Contact us</a>
+    </div>
+  );
+
   return (
     <header>
       <nav>
@@ -22,28 +34,26 @@ const NavBar = () => {
             className={classes.navigationLogo}
           />
           <button className={classes.mobileNavIcon} onClick={toggleMenu}>
-            {isOpen ? <BsChevronDoubleDown /> : <BsChevronDoubleUp />}
+            {isOpen ? <BsChevronDoubleUp /> : <BsChevronDoubleDown />}
           </button>
         </div>
-        <CSSTransition
-          in={isOpen}
-          classNames={{
-            enter: slide.enter,
-            enterActive: slide.enterActive,
-            exit: slide.exit,
-            exitActive: slide.exitActive,
-          }}
-          timeout={300}
-          unmountOnExit
-        >
-          <div className={classes.navItems}>
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About us</a>
-            <a href="#team">Meet the team</a>
-            <a href="#contact">Contact us</a>
-          </div>
-        </CSSTransition>
+        {width > 767 ? (
+          navBar
+        ) : (
+          <CSSTransition
+            in={isOpen}
+            classNames={{
+              enter: slide.enter,
+              enterActive: slide.enterActive,
+              exit: slide.exit,
+              exitActive: slide.exitActive,
+            }}
+            timeout={300}
+            unmountOnExit
+          >
+            {navBar}
+          </CSSTransition>
+        )}
       </nav>
     </header>
   );
