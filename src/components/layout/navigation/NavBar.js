@@ -25,37 +25,31 @@ const NavBar = () => {
   );
 
   return (
-    <header>
-      <nav>
-        <div className={classes.navRibbon}>
-          <img
-            src={pawWhite}
-            alt="pawprint"
-            className={classes.navigationLogo}
-          />
-          <button className={classes.mobileNavIcon} onClick={toggleMenu}>
-            {isOpen ? <BsChevronDoubleUp /> : <BsChevronDoubleDown />}
-          </button>
-        </div>
-        {width > 767 ? (
-          navBar
-        ) : (
-          <CSSTransition
-            in={isOpen}
-            classNames={{
-              enter: slide.enter,
-              enterActive: slide.enterActive,
-              exit: slide.exit,
-              exitActive: slide.exitActive,
-            }}
-            timeout={300}
-            unmountOnExit
-          >
-            {navBar}
-          </CSSTransition>
-        )}
-      </nav>
-    </header>
+    <nav>
+      <div className={classes.navRibbon}>
+        <img src={pawWhite} alt="pawprint" className={classes.navigationLogo} />
+        <button className={classes.mobileNavIcon} onClick={toggleMenu}>
+          {isOpen ? <BsChevronDoubleUp /> : <BsChevronDoubleDown />}
+        </button>
+      </div>
+      {width > 767 ? (
+        navBar
+      ) : (
+        <CSSTransition
+          in={isOpen}
+          classNames={{
+            enter: slide.enter,
+            enterActive: slide.enterActive,
+            exit: slide.exit,
+            exitActive: slide.exitActive,
+          }}
+          timeout={300}
+          unmountOnExit
+        >
+          {navBar}
+        </CSSTransition>
+      )}
+    </nav>
   );
 };
 
