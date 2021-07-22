@@ -12,6 +12,7 @@
 
 ul {
   padding: 0;
+  list-style: none;
 }
 
 section {
@@ -19,6 +20,7 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 section:nth-child(odd){

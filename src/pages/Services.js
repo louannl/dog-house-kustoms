@@ -19,7 +19,7 @@ const Services = () => {
             <h3>Customise your dream!</h3>
             <ul className={classes.servicesOffered}>
               <li>
-                <BsFillAlarmFill />
+                <BsFillAlarmFill className={classes.Icon} />
                 Restoration
               </li>
               <p>
@@ -28,7 +28,7 @@ const Services = () => {
                 dolorem?
               </p>
               <li>
-                <BsBrush />
+                <BsBrush className={classes.Icon} />
                 Custom Paint Work
               </li>
               <p>
@@ -37,7 +37,7 @@ const Services = () => {
                 dolorem?
               </p>
               <li>
-                <BsLayersFill />
+                <BsLayersFill className={classes.Icon} />
                 Custom parts
               </li>
               <p>
@@ -46,7 +46,7 @@ const Services = () => {
                 dolorem?
               </p>
               <li>
-                <BsTools />
+                <BsTools className={classes.Icon} />
                 Fabrication and modding
               </li>
               <p>
