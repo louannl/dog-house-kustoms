@@ -1,0 +1,6 @@
+@import '../components/UI/theme.css';
+
+section {
+  color: #fff;
+  background: var(--color-red);
+}
