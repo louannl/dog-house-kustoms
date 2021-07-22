@@ -1,21 +1,25 @@
 import { Element } from 'react-scroll';
+import {
+  BsFillAlarmFill,
+  BsBrush,
+  BsLayersFill,
+  BsTools,
+} from 'react-icons/bs';
+
 import Content from '../components/UI/Content';
 import classes from './Services.module.css';
 
 const Services = () => {
   return (
-    <section>
+    <section className={classes.service}>
       <Element name="services">
         <Content className={classes.content}>
-          <h2>Our services</h2>
+          <h2 className={classes.service}>Our services</h2>
           <div class="section-comments">
             <h3>Customise your dream!</h3>
-            <ul>
+            <ul className={classes.servicesOffered}>
               <li>
-                <ion-icon
-                  name="refresh-circle"
-                  class="services-icon"
-                ></ion-icon>
+                <BsFillAlarmFill />
                 Restoration
               </li>
               <p>
@@ -24,8 +28,8 @@ const Services = () => {
                 dolorem?
               </p>
               <li>
-                <ion-icon name="brush" class="services-icon"></ion-icon>Custom
-                Paint Work
+                <BsBrush />
+                Custom Paint Work
               </li>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
@@ -33,8 +37,8 @@ const Services = () => {
                 dolorem?
               </p>
               <li>
-                <ion-icon name="hammer" class="services-icon"></ion-icon>Custom
-                parts
+                <BsLayersFill />
+                Custom parts
               </li>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
@@ -42,7 +46,7 @@ const Services = () => {
                 dolorem?
               </p>
               <li>
-                <ion-icon name="cut" class="services-icon"></ion-icon>
+                <BsTools />
                 Fabrication and modding
               </li>
               <p>

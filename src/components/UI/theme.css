@@ -21,6 +21,25 @@ section {
   text-align: center;
 }
 
+section:nth-child(odd){
+  color: #fff;
+  background: var(--color-red);
+}
+
+section:nth-child(even){
+  color: var(--color-black);
+  background: var(--color-yellow);
+}
+
+section:nth-child(even){
+  color: var(--color-black);
+  background: var(--color-yellow);
+}
+
+section:nth-child(even) h2:after {
+  background-color: var(--color-black);
+}
+
 h1,
 h2,
 h3 {
