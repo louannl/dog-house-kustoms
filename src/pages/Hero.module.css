@@ -5,18 +5,17 @@ section {
   background: var(--color-red);
 }
 
-.heroLink:link,
-.heroLink:visited {
-    color: #efdc05;
-    text-decoration: none;
-    font-weight: 400;
-    padding: 10px;
-    border-bottom: #efdc05 solid 1px;
-    transition: 0.5s, color 0.5s;
+.heroLink {
+  color: var(--color-yellow);
+  font-weight: 400;
+  padding: 10px;
+  border-bottom: var(--color-yellow) solid 1px;
+  transition: 0.5s, color 0.5s;
+  cursor: pointer;
 }
 
 .heroLink:hover,
 .heroLink:active {
-    color: #e53a40;
-    border-bottom: #e53a40 solid 2px;
+    color: var(--color-black);
+    border-bottom: var(--color-black) solid 1px;
 }

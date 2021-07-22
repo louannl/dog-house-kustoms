@@ -1,4 +1,4 @@
-import { Element } from 'react-scroll';
+import { Element, Link } from 'react-scroll';
 import Content from '../components/UI/Content';
 import classes from './Hero.module.css';
 
@@ -9,11 +9,16 @@ const Hero = () => {
         <Content className={classes.content}>
           <h1>Dog House Kustoms</h1>
           <p>
-            East-London motorbike mechanics who are more than just passionate
+            East London motorbike mechanics who are more than just passionate...
           </p>
-          <button className={classes.heroLink} href="#">
+          <Link
+            className={classes.heroLink}
+            to="contact-us"
+            smooth={true}
+            offset={-100}
+          >
             Contact Us
-          </button>
+          </Link>
         </Content>
       </Element>
     </section>
