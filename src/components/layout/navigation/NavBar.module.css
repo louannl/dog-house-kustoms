@@ -40,7 +40,7 @@ nav {
   flex-direction: column;
 }
 
-.navItems a {
+.navItemsLink {
   text-decoration: none;
   cursor: pointer;
   margin: 2rem 2rem;
@@ -50,8 +50,8 @@ nav {
   border-color: transparent;
 }
 
-.navItems a:hover,
-.navItems a:active {
+.navItemsLink:hover,
+.navItemsLink:active {
   border-bottom: 2px solid var(--color-red);
 }
 

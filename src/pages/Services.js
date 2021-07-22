@@ -5,7 +5,7 @@ import classes from './Services.module.css';
 const Services = () => {
   return (
     <section>
-      <Element name="Services">
+      <Element name="services">
         <Content className={classes.content}>
           <h2>Our services</h2>
           <div class="section-comments">

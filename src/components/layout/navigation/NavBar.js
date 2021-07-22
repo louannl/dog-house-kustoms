@@ -4,6 +4,7 @@ import pawWhite from '../../../assets/images/vendor/Dog-Paw-Print-white.png';
 import { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import slide from '../../transitions/slide.module.css';
+import NavItem from './NavItem';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,11 +17,11 @@ const NavBar = () => {
 
   let navBar = (
     <div className={classes.navItems}>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About us</a>
-      <a href="#team">Meet the team</a>
-      <a href="#contact">Contact us</a>
+      <NavItem link="home">Home</NavItem>
+      <NavItem link="services">Services</NavItem>
+      <NavItem link="about-us">About us</NavItem>
+      <NavItem link="meet-the-team">Meet the team</NavItem>
+      <NavItem link="contact-us">Contact us</NavItem>
     </div>
   );
 

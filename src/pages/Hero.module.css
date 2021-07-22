@@ -4,3 +4,19 @@ section {
   color: #fff;
   background: var(--color-red);
 }
+
+.heroLink:link,
+.heroLink:visited {
+    color: #efdc05;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 10px;
+    border-bottom: #efdc05 solid 1px;
+    transition: 0.5s, color 0.5s;
+}
+
+.heroLink:hover,
+.heroLink:active {
+    color: #e53a40;
+    border-bottom: #e53a40 solid 2px;
+}

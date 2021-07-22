@@ -5,7 +5,7 @@ import classes from './ContactUs.module.css';
 const ContactUs = () => {
   return (
     <section>
-      <Element name="Contact-us">
+      <Element name="contact-us">
         <Content className={classes.content}>
           <h2>Contact us</h2>
           <form action="#" class="contact-form">

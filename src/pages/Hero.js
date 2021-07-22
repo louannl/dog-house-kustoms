@@ -11,7 +11,9 @@ const Hero = () => {
           <p>
             East-London motorbike mechanics who are more than just passionate
           </p>
-          <button>Contact Us</button>
+          <button className={classes.heroLink} href="#">
+            Contact Us
+          </button>
         </Content>
       </Element>
     </section>

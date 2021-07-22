@@ -5,7 +5,7 @@ import classes from './MeetTheTeam.module.css';
 const MeetTheTeam = () => {
   return (
     <section>
-      <Element name="Meet-the-team">
+      <Element name="meet-the-team">
         <Content className={classes.content}>
           <h2>Meet the team</h2>
           <div class="section-comments">

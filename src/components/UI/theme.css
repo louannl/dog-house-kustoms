@@ -42,3 +42,7 @@ h2:after {
   margin: 0 auto;
   margin-top: 1rem;
 }
+
+h3 {
+  font-weight: 400;
+}
