@@ -8,8 +8,8 @@ const ContactUs = () => {
       <Element name="contact-us">
         <Content className={classes.content}>
           <h2>Contact us</h2>
-          <form action="#" class="contact-form">
-            <ul class="flex-outer">
+          <form action="#" className={classes.contactForm}>
+            <ul className={classes.flexOuter}>
               <li>
                 <label for="first-name">First Name</label>
                 <input

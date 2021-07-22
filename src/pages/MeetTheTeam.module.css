@@ -1,1 +1,17 @@
 @import '../components/UI/theme.css';
+
+.photoCard {
+  padding: 10px;
+}
+
+.photoCard img {
+  flex: 1;
+  width: 350px;
+  height: auto;
+  clip-path: circle(50%);
+  margin-bottom: 10px;
+}
+
+.photoCard h3 {
+  text-transform: capitalize;
+}

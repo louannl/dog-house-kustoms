@@ -1,6 +1,8 @@
 import { Element } from 'react-scroll';
 import Content from '../components/UI/Content';
 import classes from './MeetTheTeam.module.css';
+import lewis from '../assets/images/lewis.png';
+import linus from '../assets/images/linus.png';
 
 const MeetTheTeam = () => {
   return (
@@ -8,16 +10,26 @@ const MeetTheTeam = () => {
       <Element name="meet-the-team">
         <Content className={classes.content}>
           <h2>Meet the team</h2>
-          <div class="section-comments">
-            <div class="photo-card">
-              <img src="Resources/img/lewis.png" alt="lewis" />
+          <div>
+            <div class={classes.photoCard}>
+              <img src={lewis} alt="lewis" />
               <h3>Lewis Loizou</h3>
-              <p>Something something something darkside</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
             </div>
-            <div class="photo-card">
-              <img src="Resources/img/linus2.png" alt="linus" />
+            <div class={classes.photoCard}>
+              <img src={linus} alt="linus" />
               <h3>Linus Blazeys</h3>
-              <p>Something something something something</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
             </div>
           </div>
         </Content>
