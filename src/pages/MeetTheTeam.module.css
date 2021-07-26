@@ -1,17 +1,22 @@
 @import '../components/UI/theme.css';
 
-.photoCard {
-  padding: 10px;
+.teamCards {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.photoCard img {
-  flex: 1;
-  width: 350px;
-  height: auto;
-  clip-path: circle(50%);
-  margin-bottom: 10px;
+@media only screen and (min-width: 640px) {
+  
 }
 
-.photoCard h3 {
-  text-transform: capitalize;
+@media only screen and (min-width: 768px) {
+  
 }
+
+@media only screen and (min-width: 1024px) {
+  .teamCards {
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (min-width: 1536px) {}
