@@ -67,3 +67,7 @@ h2:after {
 h3 {
   font-weight: 400;
 }
+
+p {
+  padding: 2rem 1rem;
+}

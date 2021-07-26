@@ -1,7 +1,6 @@
 .content {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
   max-width: 1280px;
+  margin: 0 auto;
 }
 
 /* TODO: media queries */
@@ -9,10 +8,7 @@
 
 /* -------BIG TABLETS/SMALL COMPUTERS: 1200px------- */
 @media only screen and (min-width: 1200px) {
-  .content {
-    margin-left: auto;
-    margin-right: auto;
-  }
+
 }
 /* -------SMALL/BIG TABLETS: 767 - 1023px------- */
 @media only screen and (min-width: 1023px) {}
