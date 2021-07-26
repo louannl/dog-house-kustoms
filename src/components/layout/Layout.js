@@ -4,6 +4,7 @@ import ContactUs from '../../pages/ContactUs';
 import Hero from '../../pages/Hero';
 import MeetTheTeam from '../../pages/MeetTheTeam';
 import Services from '../../pages/Services';
+import Footer from '../UI/Footer';
 import NavBar from './navigation/NavBar';
 
 const Layout = () => {
@@ -17,6 +18,7 @@ const Layout = () => {
         <MeetTheTeam />
         <ContactUs />
       </main>
+      <Footer />
     </Fragment>
   );
 };

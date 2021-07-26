@@ -1,0 +1,18 @@
+@import '../UI/theme.css';
+
+footer {
+  background-color: var(--color-black);
+  color: #f2f2f2;
+  padding: 1rem;
+  font-size: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.footerLinks {
+  font-size: x-large;
+  margin: auto 0.25rem;
+}

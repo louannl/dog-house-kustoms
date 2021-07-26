@@ -67,10 +67,6 @@ h3 {
   font-weight: 400;
 }
 
-p {
-  padding: 2rem 1rem;
-}
-
 *, :after, :before {
   box-sizing: border-box;
   border: 0 solid;

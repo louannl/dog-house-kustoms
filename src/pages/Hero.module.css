@@ -14,3 +14,7 @@
     color: var(--color-black);
     border-bottom: var(--color-black) solid 1px;
 }
+
+.subHeader {
+  padding: 2rem 1rem;
+}

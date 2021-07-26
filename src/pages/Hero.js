@@ -8,7 +8,7 @@ const Hero = () => {
       <Element name="home">
         <Content className={classes.content}>
           <h1>Dog House Kustoms</h1>
-          <p>
+          <p className={classes.subHeader}>
             East London motorbike mechanics who are more than just passionate...
           </p>
           <Link
