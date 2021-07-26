@@ -1,0 +1,69 @@
+@import '../theme.css';
+
+.formContents {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.formContents div {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: 100%;
+}
+
+.formContents label {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: small;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.formContents input {
+  border: none;
+  padding: 1rem;
+  border-radius: .25rem;
+  border-width: 1px;
+  width: 100%;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.formContents textarea {
+  border: none;
+  padding: 1rem;
+  border-radius: .25rem;
+  border-width: 1px;
+  width: 100%;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submitButton > button {
+  margin: 0 0.75rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: var(--color-black);
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  border-radius: 2px;
+}
+
+@media only screen and (min-width: 640px) {
+  .formContents div:not(:last-child) {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1536px) {}
