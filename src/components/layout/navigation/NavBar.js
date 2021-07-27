@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import slide from '../../transitions/slide.module.css';
 import NavItem from './NavItem';
-import Content from '../../UI/Content';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
