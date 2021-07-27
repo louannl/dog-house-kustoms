@@ -91,6 +91,7 @@ button {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+  height: 4rem;
 }
 
 @media only screen and (min-width: 640px) {}

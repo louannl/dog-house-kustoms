@@ -17,11 +17,21 @@ const NavBar = () => {
 
   let navBar = (
     <div className={classes.navItems}>
-      <NavItem link="home">Home</NavItem>
-      <NavItem link="services">Services</NavItem>
-      <NavItem link="about-us">About us</NavItem>
-      <NavItem link="meet-the-team">Meet the team</NavItem>
-      <NavItem link="contact-us">Contact us</NavItem>
+      <NavItem link="home" onClick={toggleMenu}>
+        Home
+      </NavItem>
+      <NavItem link="services" onClick={toggleMenu}>
+        Services
+      </NavItem>
+      <NavItem link="about-us" onClick={toggleMenu}>
+        About us
+      </NavItem>
+      <NavItem link="meet-the-team" onClick={toggleMenu}>
+        Meet the team
+      </NavItem>
+      <NavItem link="contact-us" onClick={toggleMenu}>
+        Contact us
+      </NavItem>
     </div>
   );
 
