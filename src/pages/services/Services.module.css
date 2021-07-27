@@ -13,7 +13,7 @@
 .serviceCard img {
   width: 100%;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 3px;
   z-index: 0;
 }
 
@@ -24,7 +24,7 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: white;
-  border-radius: 1rem;
+  border-radius: 3px;
   margin-top: -5rem;
   margin-bottom: 1rem;
 }

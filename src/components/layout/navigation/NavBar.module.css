@@ -1,27 +1,22 @@
 @import '../../UI/theme.css';
 
 nav {
-  max-width: 100%;
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   background-color: var(--color-black);
-  z-index: 9999;
-  font-size: large;
-  align-items: center;
+  color: #fff;
+  z-index: 50;
 }
 
-/* ------------------------------------------ */
-/* MOBILE NAVIGATION */
-/* ------------------------------------------ */
-
-.mobileNavIcon {
-  float: right;
-  margin-top: 20px;
-  cursor: pointer;
-  font-size: 200%;
-  color: #fff;
+.content { 
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .navRibbon {
@@ -32,32 +27,50 @@ nav {
 
 .navItems {
   height: 100vh;
+  display: block;
   padding: 0.25rem 0.5rem;
-  text-align: center;
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
 }
 
 .navItemsLink {
+  display: block;
   text-decoration: none;
   cursor: pointer;
-  margin: 2rem 2rem;
-  padding: 0.25rem 0.5rem;
   color: #fff;
   border-bottom: 2px;
+  height: 15%;
   border-color: transparent;
+  transition: .3s ease-out;
 }
 
-.navItemsLink:hover,
-.navItemsLink:active {
-  border-bottom: 2px solid var(--color-red);
+.navItemsLink:hover {
+  color: var(--color-red);
+}
+
+.navItemsLink:after {
+  display: block;
+  height: 2px;
+  width: 50%;
+  background: linear-gradient(to left, transparent 50%, var(--color-red) 50%) right;
+  background-size: 200%;
+  content: ' ';
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  transition: .3s ease-out;
+}
+
+.navItemsLink:hover::after {
+  background-position: left;
+}
+
+.mobileNavIcon {
+  cursor: pointer;
+  font-size: 200%;
 }
 
 .navigationLogo {
   height: 4rem;
   width: auto;
-  float: left;
 }  
 
 button {
@@ -73,6 +86,11 @@ button {
 @media only screen and (min-width: 640px) {}
 
 @media only screen and (min-width: 768px) {
+  .content { 
+    display: flex;
+    justify-content: space-around;
+  }
+
   .mobileNavIcon {
     display: none;
   }
@@ -81,12 +99,8 @@ button {
     display: none;
   }
 
-  nav {
-    display: flex;
-  justify-content: space-around;
-  }
-
   .navItems {
+    display: flex;
     height: auto;
     padding: 0.25rem 0.5rem;
     text-transform: capitalize;
@@ -95,6 +109,12 @@ button {
   
   .navItems a {
     margin: 0.25rem 0.25rem;
+    margin-bottom: 2px;
+    padding-left: 1rem;
+  }
+
+  .navItemsLink:after {
+    margin-top: 2px;
   }
 }
 
