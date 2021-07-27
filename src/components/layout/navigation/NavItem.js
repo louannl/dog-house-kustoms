@@ -5,7 +5,7 @@ const NavItem = (props) => {
   return (
     <Link
       className={classes.navItemsLink}
-      activeClass={classes.navItemsLink}
+      activeClass={classes.active}
       to={props.link}
       spy={true}
       smooth={true}

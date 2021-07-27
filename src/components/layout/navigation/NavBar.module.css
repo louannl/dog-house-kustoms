@@ -43,10 +43,6 @@ nav {
   transition: .3s ease-out;
 }
 
-.navItemsLink:hover {
-  color: var(--color-red);
-}
-
 .navItemsLink:after {
   display: block;
   height: 2px;
@@ -59,7 +55,21 @@ nav {
   transition: .3s ease-out;
 }
 
-.navItemsLink:hover::after {
+.navItemsLink:hover,
+.navItemsLink:active {
+  color: var(--color-red);
+}
+
+.navItemsLink:hover::after,
+.navItemsLink:active::after {
+  background-position: left;
+}
+
+/*FIXME: There must be a better way to get this to work with css modules?*/
+.active {
+  color: var(--color-red);
+}
+.active:after {
   background-position: left;
 }
 
