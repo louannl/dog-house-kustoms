@@ -3,7 +3,7 @@ import AboutUs from '../../pages/AboutUs';
 import ContactUs from '../../pages/ContactUs';
 import Hero from '../../pages/Hero';
 import MeetTheTeam from '../../pages/MeetTheTeam';
-import Services from '../../pages/Services';
+import Services from '../../pages/services/Services';
 import Footer from '../UI/Footer';
 import NavBar from './navigation/NavBar';
 
