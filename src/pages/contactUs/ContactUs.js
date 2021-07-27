@@ -1,6 +1,6 @@
 import { Element } from 'react-scroll';
-import Content from '../components/UI/Content';
-import ContactForm from '../components/UI/form/ContactForm';
+import Content from '../../components/UI/Content';
+import ContactForm from '../../components/UI/form/ContactForm';
 
 const ContactUs = () => {
   return (

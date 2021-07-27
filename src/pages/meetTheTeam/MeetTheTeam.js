@@ -1,9 +1,9 @@
 import { Element } from 'react-scroll';
-import Content from '../components/UI/Content';
+import Content from '../../components/UI/Content';
 import classes from './MeetTheTeam.module.css';
-import lewis from '../assets/images/lewis.png';
-import linus from '../assets/images/linus.png';
-import Card from '../components/UI/card/Card';
+import lewis from '../../assets/images/lewis.png';
+import linus from '../../assets/images/linus.png';
+import Card from '../../components/UI/card/Card';
 
 const description = `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

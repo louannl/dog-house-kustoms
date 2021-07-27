@@ -1,5 +1,5 @@
 import { Element, Link } from 'react-scroll';
-import Content from '../components/UI/Content';
+import Content from '../../components/UI/Content';
 import classes from './Hero.module.css';
 
 const Hero = () => {

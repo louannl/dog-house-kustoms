@@ -1,5 +1,5 @@
 import { Element } from 'react-scroll';
-import Content from '../components/UI/Content';
+import Content from '../../components/UI/Content';
 import classes from './AboutUs.module.css';
 
 const AboutUs = () => {

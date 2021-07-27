@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
-import AboutUs from '../../pages/AboutUs';
-import ContactUs from '../../pages/ContactUs';
-import Hero from '../../pages/Hero';
-import MeetTheTeam from '../../pages/MeetTheTeam';
+import AboutUs from '../../pages/aboutUs/AboutUs';
+import ContactUs from '../../pages/contactUs/ContactUs';
+import Hero from '../../pages/hero/Hero';
+import MeetTheTeam from '../../pages/meetTheTeam/MeetTheTeam';
 import Services from '../../pages/services/Services';
 import Footer from '../UI/Footer';
 import NavBar from './navigation/NavBar';
