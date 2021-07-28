@@ -17,9 +17,6 @@ I've noticed in Chrome the styling on smaller screens doesn't position the conte
 - Mobile screen - scroll
 Because I expand the navigation to take up the viewport height on mobile this pushes content down - at current, when using the nav-links, it won't position the user in the correct place because of this. I can fix this. 
 
-- Styling Iframe (google map) dynamically
-I can't. I can either look at an alternative to an iframe or figure out how to get the styling working with css modules. 
-
 ## Media queries blank copy (Switched to mobile first)
 @media only screen and (min-width: 640px) {}
 

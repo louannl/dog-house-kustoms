@@ -1,20 +1,60 @@
 @import '../../components/UI/theme.css';
 
 .mediaAboutus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.location {
   align-items: center;
+}
+
+.openingTimes > h3 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.time {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.openingTimes ul {
-  text-align: center;
-  list-style: none;
-  padding-bottom: 20px;
-}
-
-/* MAP */
-
 .map {
-  height: 400px;
-  width: 600px;
+  width: 80%;
+  height: 10rem;
+  margin: auto;
   box-shadow: 10px 10px 18px #090707;
+  position: relative;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
+
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media only screen and (min-width: 640px) {
+  .map {
+    height: 20rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {
+  .location {
+    width: 50%;
+  }
+
+  .hours {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1536px) {}
