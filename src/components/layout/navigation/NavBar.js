@@ -1,9 +1,10 @@
-import { BsChevronDoubleUp, BsChevronDoubleDown } from 'react-icons/bs';
+import { BsX, BsList } from 'react-icons/bs';
 import classes from './NavBar.module.css';
 import pawWhite from '../../../assets/images/vendor/Dog-Paw-Print-white.png';
 import { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import slide from '../../transitions/slide.module.css';
+import shift from '../../transitions/shift.module.css';
 import NavItem from './NavItem';
 
 const NavBar = () => {
@@ -45,7 +46,18 @@ const NavBar = () => {
             className={classes.navigationLogo}
           />
           <button className={classes.mobileNavIcon} onClick={toggleMenu}>
-            {isOpen ? <BsChevronDoubleUp /> : <BsChevronDoubleDown />}
+            <CSSTransition
+              in={isOpen}
+              classNames={{
+                enter: shift.enter,
+                enterActive: shift.enterActive,
+                exit: shift.exit,
+                exitActive: shift.exitActive,
+              }}
+              timeout={300}
+            >
+              {isOpen ? <BsX /> : <BsList />}
+            </CSSTransition>
           </button>
         </div>
         {width > 767 ? (

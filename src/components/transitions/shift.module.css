@@ -1,0 +1,17 @@
+.enter{
+  transform: rotate(0deg);
+  opacity: 0;
+}
+.enterActive {
+  transform: rotate(180deg);
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
+.exit {
+  opacity: 0;
+}
+.exitActive {
+  transform: rotate(-180deg);
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
