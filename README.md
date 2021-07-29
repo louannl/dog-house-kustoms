@@ -12,9 +12,10 @@ Tailwind made it a lot easier to quickly style elements in my other projects.
 
 ## Known Issues
 - Mobile navbar
+
 At the moment, in a small amount of occurrences (smaller viewport heights), the mobile nav will cut off the last few navigation pages due to utilising viewport height, instead of dynamically using the rest of the viewport height. 
 
-## Solved issues
+## Solved issues (for my reference)
 - Centered content different on different browsers
 
 Having been using Tailwind, I forgot to do a basic reset, which quickly solved this issue.
@@ -22,11 +23,13 @@ Having been using Tailwind, I forgot to do a basic reset, which quickly solved t
 - Issue styling Iframe
 
 Originally, I used an id to style the iframe, which didn't work in React modules. 
+
 So I instead wrapped the frame in a div and styled it this way. 
 
 - Navigation scroll not positioning correctly on mobile 
 
 This was due to the mobile menu using the viewport height by pushing all content down. 
+
 I instead changed the positioning to absolute, so it is over the content and doesn't displace it.
 
 ## Media queries blank copy (Switched to mobile first)
@@ -57,5 +60,7 @@ Image by <a href="https://pixabay.com/users/splitshire-364019/?utm_source=link-a
 ## Inspiration for reference
 
 https://onepagelove.com/cardea
+
 https://asecustommotorcycles.co.uk/ase
+
 http://sugarfirepie.com/
