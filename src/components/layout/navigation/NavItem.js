@@ -9,7 +9,6 @@ const NavItem = (props) => {
       to={props.link}
       spy={true}
       smooth={true}
-      delay={300}
       offset={-64}
       onClick={props.onClick}
     >

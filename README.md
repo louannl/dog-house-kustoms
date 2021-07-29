@@ -11,11 +11,23 @@ Comments:
 Tailwind made it a lot easier to quickly style elements in my other projects.
 
 ## Known Issues
-- Mobile screen - centered content 
-I've noticed in Chrome the styling on smaller screens doesn't position the content in the center, while firefox does. 
+- Mobile navbar
+At the moment, in a small amount of occurrences (smaller viewport heights), the mobile nav will cut off the last few navigation pages due to utilising viewport height, instead of dynamically using the rest of the viewport height. 
 
-- Mobile screen - scroll
-Because I expand the navigation to take up the viewport height on mobile this pushes content down - at current, when using the nav-links, it won't position the user in the correct place because of this. I can fix this. 
+## Solved issues
+- Centered content different on different browsers
+
+Having been using Tailwind, I forgot to do a basic reset, which quickly solved this issue.
+
+- Issue styling Iframe
+
+Originally, I used an id to style the iframe, which didn't work in React modules. 
+So I instead wrapped the frame in a div and styled it this way. 
+
+- Navigation scroll not positioning correctly on mobile 
+
+This was due to the mobile menu using the viewport height by pushing all content down. 
+I instead changed the positioning to absolute, so it is over the content and doesn't displace it.
 
 ## Media queries blank copy (Switched to mobile first)
 @media only screen and (min-width: 640px) {}

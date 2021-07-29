@@ -26,8 +26,14 @@ nav {
 }
 
 .navItems {
-  height: 100vh;
-  display: block;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+  background-color: var(--color-black);
+  height: 95vh;
+  width: 100%;
   padding: 0.25rem 0.5rem;
   text-transform: uppercase;
 }
@@ -38,7 +44,6 @@ nav {
   cursor: pointer;
   color: #fff;
   border-bottom: 2px;
-  height: 15%;
   border-color: transparent;
   transition: .3s ease-out;
 }
@@ -111,8 +116,10 @@ button {
   }
 
   .navItems {
+    position: relative;
     display: flex;
     height: auto;
+    width: auto;
     padding: 0.25rem 0.5rem;
     text-transform: capitalize;
     flex-direction: row;
